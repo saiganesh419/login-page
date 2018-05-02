@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login and resgistration form</title>
+    <link rel="stylesheet" href="sai.css">
+</head>
+<body>
+    <div class="login-page">
+       <div class="form">
+           <form class="resgister-form">
+           <input type="text" placeholder="Name"/>
+           <input type="text" placeholder="Password"/>
+           <input type="text" placeholder="E-mail"/>
+           <button>create</button>
+           <p class="message">Already Registered? <a href="#">Login</a></p>
+           </form>
+           <form class="login-form">
+           <input type="text" placeholder="Name"/>
+           <input type="text" placeholder="Password"/>
+           <button>Login</button>
+           <p class="message">Not Registered? <a href="#">Register</a></p>
+           </form>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script >
+         $('.message a').click(function(){
+        $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+        });
+    </script>
+</body>
+</html>
